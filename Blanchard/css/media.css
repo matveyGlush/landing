@@ -118,12 +118,14 @@
   .search-menu__input {
     max-width: none;
     width: 100%;
-    margin-right: 5px;
+    margin-right: 46px;
   }
 
   .search-menu__close {
     height: 30px;
     width: 30px;
+    top: 32px;
+    right: 50px;
   }
 
   .search-menu__close::before, .search-menu__close::after {
@@ -531,6 +533,11 @@
 
   .search-menu__form {
     width: 314px;
+  }
+
+  .search-menu__close {
+    top: 0;
+    right: 0;
   }
 
   /*hero*/
@@ -1140,6 +1147,7 @@
     width: 257px;
     flex-direction: row-reverse;
     align-items: center;
+    flex-grow: 0;
   }
 
   .search-menu__submit::after {

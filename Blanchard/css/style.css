@@ -417,7 +417,11 @@ path {
 }
 
 .search-menu__close {
-  position: relative;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  width: 20px;
+  height: 20px;
   background: none;
   border: none;
   padding: 0;
@@ -426,8 +430,8 @@ path {
 .search-menu__close::before {
   content: '';
   position: absolute;
-  top: -10px;
-  left: 30px;
+  top: 12px;
+  right: 7px;
   width: 20px;
   border-top: 2px solid var(--white);
   transform: rotate(45deg);
@@ -436,8 +440,8 @@ path {
 .search-menu__close::after {
   content: '';
   position: absolute;
-  top: -10px;
-  left: 30px;
+  top: 12px;
+  right: 7px;
   width: 20px;
   border-top: 2px solid var(--white);
   transform: rotate(-45deg);
@@ -475,9 +479,13 @@ path {
   border-color: var(--violet-ultra-light);
 }
 
+.search-menu__form {
+  flex-direction: row-reverse;
+  flex-grow: 1;
+}
 
 .search-menu__input {
-  max-width: 180px;
+  width: 100%;
   background: none;
   border: none;
   border-bottom: 1px solid var(--gray);
