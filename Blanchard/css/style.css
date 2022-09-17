@@ -108,7 +108,7 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1920px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -150,7 +150,8 @@ button:focus {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 15px 13px 15px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   z-index: 2;
   background-color: var(--black);
 }
@@ -303,6 +304,10 @@ button:focus {
   position: absolute;
   border: 2px solid var(--violet-middle);
   border-radius: 100px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .login__svg {
@@ -387,7 +392,7 @@ path {
   color: var(--violet-light);
 }
 
-.nav__link:active:not(:focus) {
+.nav__link:active {
   color: var(--violet-dark);
 }
 
@@ -1064,7 +1069,26 @@ path {
   border: none;
   width: 16px;
   height: 16px;
-  background-color: #D1A9F0;
+}
+
+.modal-close::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  width: 21px;
+  border-bottom: 1px solid var(--black);
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  width: 21px;
+  border-bottom: 1px solid var(--black);
+  transform: rotate(135deg);
 }
 
 .block {
@@ -1834,7 +1858,7 @@ path {
 }
 
 .sponsor-next::before {
-  left: calc(50% - 7px / 2);
+  left: calc(50% - 9px / 2);
   border-top: 1px solid var(--black);
   border-right: 1px solid var(--black);
 }
@@ -1848,7 +1872,7 @@ path {
 }
 
 .sponsor-prev::before {
-  left: calc(50% - 7px / 2);
+  left: calc(50% - 5px / 2);
   border-left: 1px solid var(--black);
   border-bottom: 1px solid var(--black);
 }

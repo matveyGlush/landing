@@ -89,6 +89,11 @@
 }
 
 @media (min-width: 768px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   /*header*/
   .header {
     min-height: 100px;
@@ -96,7 +101,8 @@
   }
 
   .container--header {
-    padding: 29px 50px 30px;
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 
   .search-menu {
@@ -213,7 +219,9 @@
   }
 
   .container--hero {
-    padding: 105px 57px 115px 50px;
+    padding-top: 105px;
+    padding-right: 57px;
+    padding-bottom: 115px;
     align-items: flex-start;
   }
 
@@ -246,7 +254,8 @@
   /*about us*/
 
   .container--about-us {
-    padding: 85px 50px 70px 50px;
+    padding-top: 85px;
+    padding-bottom: 70px;
   }
 
   .about-us__title {
@@ -265,7 +274,8 @@
   }
 
   .container--gallery {
-    padding: 95px 50px 60px 50px;
+    padding-top: 95px;
+    padding-bottom: 60px;
   }
 
   .gallery__title {
@@ -321,7 +331,8 @@
 
   /*catalog*/
   .container--catalog {
-    padding: 84px 50px 50px;
+    padding-top: 84px;
+    padding-bottom: 50px;
   }
 
   .catalog__title {
@@ -387,7 +398,8 @@
 
   /*events*/
   .container--events {
-    padding: 22px 50px 0;
+    padding-top: 22px;
+    padding-bottom: 0;
   }
 
   .events__title {
@@ -422,7 +434,8 @@
 
   /*projects*/
   .container--projects {
-    padding: 90px 50px 86px 50px;
+    padding-top: 90px;
+    padding-bottom: 86px;
   }
 
   .projects__title {
@@ -448,10 +461,8 @@
   /*contacts*/
   .container--contacts {
     border: 1px solid var(--light-middle-gray);
-  }
-
-  .container--contacts {
-    padding: 46px 50px 25px 50px;
+    padding-top: 46px;
+    padding-bottom: 25px;
   }
 
   .contacts__subtitle {
@@ -510,7 +521,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 40px 50px 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 
   .footer__logo-link {
@@ -590,7 +602,8 @@
 
   /*catalog*/
   .container--catalog {
-    padding: 84px 50px 20px;
+    padding-top: 84px;
+    padding-bottom: 20px;
   }
 
   .accordion__inner-list {
@@ -646,7 +659,8 @@
 
   /*projects*/
   .container--projects {
-    padding: 92px 50px 70px 50px;
+    padding-top: 92px;
+    padding-bottom: 70px;
   }
 
   .projects__link--tablet {
@@ -705,8 +719,7 @@
   }
 
   .header__top-container {
-    max-width: 1920px;
-    padding: 0 50px;
+    padding: 0 40px 0 50px;
     margin: 0 auto;
   }
 
@@ -1112,9 +1125,8 @@
     justify-content: space-between;
     position:unset;
     width: 100%;
-    max-width: 1920px;
     min-height: 70px;
-    padding: 15px 50px;
+    padding: 15px 42px;
     margin: 0 auto;
     height: unset;
     background-color: unset;
@@ -1227,20 +1239,13 @@
 
   .container--footer {
     margin: 0 auto;
-    padding: 50px 160px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     flex-grow: 1;
   }
 }
 
 @media(min-width: 1920px) {
-
-  .header__top-container {
-    padding: 0 152px 0 160px;
-  }
-
-  .search-menu {
-    padding: 15px 153px;
-  }
 
   .logo-link {
     min-width: 173px;
@@ -1259,7 +1264,8 @@
 
   /*hero*/
   .container--hero {
-    padding: 63px 160px 122px 160px;
+    padding-top: 63px;
+    padding-bottom: 122px;
   }
 
   .hero__title {
@@ -1274,7 +1280,8 @@
 
   /*about us*/
   .container--about-us {
-    padding: 84px 160px 72px 160px;
+    padding-top: 84px;
+    padding-bottom: 72px;
   }
 
   .about-us__text {
@@ -1287,7 +1294,8 @@
   }
 
   .container--gallery {
-    padding: 92px 160px 80px 160px;
+    padding-top: 92px;
+    padding-bottom: 80px;
   }
 
   .gallery__content {
@@ -1328,7 +1336,8 @@
 
   /*catalog*/
   .container--catalog {
-    padding: 85px 160px 21px 160px;
+    padding-top: 85px;
+    padding-bottom: 21px;
   }
 
   .catalog__text {
@@ -1358,7 +1367,8 @@
 
   /*events*/
   .container--events {
-    padding: 22px 160px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .events__info {
@@ -1397,7 +1407,8 @@
 
   /*projects*/
   .container--projects {
-    padding: 30px 160px 70px 160px;
+    padding-top: 30px;
+    padding-bottom: 70px;
   }
 
   .projects__text-wrap {
@@ -1416,6 +1427,7 @@
   .container--contacts {
     display: flex;
     align-items: center;
+    max-width: 1920px;
     padding: 37px 160px 35px 160px;
   }
 
@@ -1455,6 +1467,7 @@
   }
 
   .container--footer {
-    padding: 47px 160px;
+    padding-top: 47px;
+    padding-bottom: 47px;
   }
 }
