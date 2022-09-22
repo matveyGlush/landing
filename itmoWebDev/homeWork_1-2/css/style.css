@@ -32,6 +32,7 @@ img {
 }
 
 .btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +46,26 @@ img {
   max-width: 285px;
   max-height: 80px;
   padding: 10px 15px;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn:hover, .btn:active {
+  background-color: var(--coral-tree);
+}
+
+.btn::before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 40px;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.btn:focus::before {
+  box-shadow: 0 0 0 2px var(--coral-tree);
 }
 
 a {
@@ -85,10 +106,50 @@ header {
   margin: 0 auto;
 }
 
-.nav__item {
+.nav__link {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   color: var(--coral-tree);
+  transition: color .3s ease-in-out;
+}
+
+.nav__link::before {
+  position: absolute;
+  content: '';
+  top: -3px;
+  right: -6px;
+  bottom: -3px;
+  left: -6px;
+  background-color: var(--coral-tree);
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+  z-index: -1;
+}
+
+.nav__link::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: var(--coral-tree);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease-in-out;
+}
+
+.nav__link:focus::before {
+  transform: scaleX(1);
+}
+
+.nav__link:focus {
+  color: #fff;
+}
+
+.nav__link:hover::after, .nav__link:active::after {
+  transform: scaleX(1);
 }
 
 /*hero*/
@@ -275,10 +336,58 @@ header {
   color: var(--coral-tree);
 }
 
+/*footer*/
 footer {
   background-color: var(--coral-tree);
-  color: #fff;
   padding: 30px 30px 47px;
+}
+
+.footer__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  transition: color .3s ease-in-out;
+  z-index: 1;
+}
+
+.footer__link::before {
+  position: absolute;
+  content: '';
+  top: -3px;
+  right: -6px;
+  bottom: -3px;
+  left: -6px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+  z-index: -1;
+}
+
+.footer__link::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease-in-out;
+}
+
+.footer__link:focus::before {
+  transform: scaleX(1);
+}
+
+.footer__link:focus {
+  color: var(--coral-tree);
+}
+
+.footer__link:hover::after, .footer__link:active::after {
+  transform: scaleX(1);
 }
 
 .footer__list {
