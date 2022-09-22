@@ -72,3 +72,130 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  header {
+    margin-top: 15px;
+    padding: 16px 15px 0;
+  }
+
+  .nav__item {
+    margin-bottom: 14px;
+  }
+
+  .hero {
+    padding-top: 15px;
+  }
+
+  .nav__link {
+    position: relative;
+    font-size: 13px;
+    line-height: 120%;
+    margin-right: 20px;
+  }
+
+  .hero__title {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 110%;
+    color: var(--coral-tree);
+    margin: 0 0 15px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0 0 30px;
+  }
+
+  .btn {
+    max-width: 200px;
+    min-height: 40px;
+    max-height: 50px;
+  }
+
+  .hero__content {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__item {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .product {
+    padding-top: 0;
+  }
+
+  .product__title {
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+
+  .product__subtitle {
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0 0 20px;
+  }
+
+  .product__descr {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product__img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .promo__content {
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--coral-tree);
+    color: #fff;
+    padding: 20px;
+  }
+
+  .promo__title {
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  .promo__descr {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .promo {
+    background: none;
+    padding-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .feedback {
+    padding: 20px 20px 24px;
+    margin-bottom: 42px;
+  }
+
+  .feedback__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback__item {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 300px;
+  }
+}
