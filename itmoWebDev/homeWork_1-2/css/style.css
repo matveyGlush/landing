@@ -124,7 +124,7 @@ header {
   border-top: 1px solid var(--coral-tree);
   border-bottom: 1px solid var(--coral-tree);
   margin-top: 25px;
-  padding: 22px 30px;
+  padding: 22px 30px 2px;
 }
 
 .nav {
@@ -133,12 +133,17 @@ header {
   margin: 0 auto;
 }
 
+.nav__item {
+  margin-bottom: 20px;
+}
+
 .nav__link {
   position: relative;
   font-size: 16px;
   line-height: 20px;
   color: var(--coral-tree);
   transition: color .3s ease-in-out;
+  margin-right: 30px;
 }
 
 .nav__link::before {
@@ -197,6 +202,10 @@ header {
   font-family: "Playfair Display italic", sans-serif;
 }
 
+.hero__content {
+  margin-right: 20px;
+}
+
 .hero__descr {
   font-size: 24px;
   line-height: 29px;
@@ -214,6 +223,10 @@ header {
 
 .advantages__item {
   max-width: 345px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .advantages__img {
@@ -300,7 +313,12 @@ header {
 .promo {
   padding-top: 94px;
   margin-bottom: 90px;
+  background-image: url("../img/florist.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
+
+
 
 .promo__content {
   flex-direction: column;
@@ -338,8 +356,9 @@ header {
   justify-content: space-between;
 }
 
-.feedback__item {
+.feedback__item:not(:last-child) {
   max-width: 300px;
+  margin-right: 20px;
 }
 
 .feedback__title {
